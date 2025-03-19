@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="2.5.1" nuitka_commercial_version="not installed" completion="exception">
+  <exception exception_type="AssertionError" exception_value="collections.abc">
+Traceback (most recent call last):
+  File "C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\venv\Lib\site-packages\nuitka\MainControl.py", line 1160, in main
+    _main()
+    ~~~~~^^
+  File "C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\venv\Lib\site-packages\nuitka\MainControl.py", line 999, in _main
+    main_module = _createMainModule()
+  File "C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\venv\Lib\site-packages\nuitka\MainControl.py", line 146, in _createMainModule
+    main_module = buildMainModuleTree(
+        source_code=None,
+    )
+  File "C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\venv\Lib\site-packages\nuitka\tree\Building.py", line 1186, in buildMainModuleTree
+    module.setStandardLibraryModules(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        early_module_names=detectEarlyImports(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        stdlib_modules_names=detectStdlibAutoInclusionModules(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\venv\Lib\site-packages\nuitka\nodes\ModuleNodes.py", line 961, in setStandardLibraryModules
+    assert finding != "not-found", early_module_name
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: collections.abc
+</exception>
+  <performance>
+    <memory_usage name="after_launch" value="39411712" />
+  </performance>
+  <data_composer blob_size="None" />
+  <command_line>
+    <option value="C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\app.py" />
+    <option value="--follow-imports" />
+    <option value="--enable-plugin=pyside6" />
+    <option value="--output-dir=C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\deployment" />
+    <option value="--quiet" />
+    <option value="--noinclude-qt-translations" />
+    <option value="--onefile" />
+    <option value="--noinclude-dlls=*.cpp.o" />
+    <option value="--noinclude-dlls=*.qsb" />
+    <option value="--windows-icon-from-ico=C:\Users\Cesar\OneDrive\Área de Trabalho\Neuro Churn Bank\venv\Lib\site-packages\PySide6\scripts\deploy_lib\pyside_icon.ico" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="data-files" user_enabled="no" />
+    <plugin name="delvewheel" user_enabled="no" />
+    <plugin name="dll-files" user_enabled="no" />
+    <plugin name="eventlet" user_enabled="no" />
+    <plugin name="gevent" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="glfw" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="kivy" user_enabled="no" />
+    <plugin name="matplotlib" user_enabled="no" />
+    <plugin name="multiprocessing" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pbr-compat" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="playwright" user_enabled="no" />
+    <plugin name="pyside6" user_enabled="yes" />
+    <plugin name="pywebview" user_enabled="no" />
+    <plugin name="spacy" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}\Scripts\python.exe" python_flavor="CPython Official" python_version="3.13.1" os_name="Windows" os_release="11" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}" />
+      <path value="${sys.real_prefix}\DLLs" />
+      <path value="${sys.real_prefix}\Lib" />
+      <path value="${sys.real_prefix}" />
+      <path value="${sys.prefix}" />
+      <path value="${sys.prefix}\Lib\site-packages" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}\deployment\app.exe" />
+</nuitka-compilation-report>
